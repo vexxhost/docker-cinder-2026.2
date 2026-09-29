@@ -5,8 +5,10 @@ FROM ghcr.io/vexxhost/openstack-venv-builder:main@sha256:a3c16e6fa87901cd34f9f96
 COPY --from=cinder . /src/cinder
 COPY --from=requirements upper-constraints.txt /src/requirements/upper-constraints.txt
 RUN <<EOF bash -xe
+# The builder's OpenStack index does not mirror every master constraint.
 uv pip install \
     --constraint /src/requirements/upper-constraints.txt \
+    --index-strategy unsafe-best-match \
         /src/cinder \
         py-pure-client \
         python-3parclient \
