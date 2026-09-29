@@ -3,9 +3,10 @@
 
 FROM ghcr.io/vexxhost/openstack-venv-builder:main@sha256:a3c16e6fa87901cd34f9f96da1280077ee011caf34641840a38e3ab71b1e03ae AS build
 COPY --from=cinder . /src/cinder
+COPY --from=requirements upper-constraints.txt /src/requirements/upper-constraints.txt
 RUN <<EOF bash -xe
 uv pip install \
-    --constraint /upper-constraints.txt \
+    --constraint /src/requirements/upper-constraints.txt \
         /src/cinder \
         py-pure-client \
         python-3parclient \
