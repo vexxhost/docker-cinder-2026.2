@@ -24,12 +24,12 @@ jobs:
         with:
           egress-policy: audit
 
-      - uses: vexxhost/docker-atmosphere/.github/actions/checkout@15f30aa3f1fff75915cf230d19e00a54324d6ec7 # main
+      - uses: vexxhost/docker-atmosphere/.github/actions/checkout@d8ddc2c298084f3364e40082a91614cbfc7ded90 # main
         with:
           repository: openstack/cinder
           ref: 270ba9ea896827272485526127c2cbcb3a16a3ee # master
 
-      - uses: vexxhost/docker-atmosphere/.github/actions/checkout@15f30aa3f1fff75915cf230d19e00a54324d6ec7 # main
+      - uses: vexxhost/docker-atmosphere/.github/actions/checkout@d8ddc2c298084f3364e40082a91614cbfc7ded90 # main
         with:
           repository: openstack/requirements
           ref: 3ea865eac756fc82ea83933ab5e2ce0c9700eb16 # master
