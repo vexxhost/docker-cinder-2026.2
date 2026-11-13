@@ -27,12 +27,12 @@ jobs:
       - uses: vexxhost/docker-atmosphere/.github/actions/checkout@c2a2333f668bfbf131bd2a7aa8c387be80f0ea85 # main
         with:
           repository: openstack/cinder
-          ref: 460c6a195f3394a25d9d01836f9a4ce9420f3e43 # master
+          ref: 4bc1c8e71948810d8bf16df3e6e38f8248bad9c2 # master
 
       - uses: vexxhost/docker-atmosphere/.github/actions/checkout@c2a2333f668bfbf131bd2a7aa8c387be80f0ea85 # main
         with:
           repository: openstack/requirements
-          ref: bd672328dda8e9672d87d64525e29ce2e8dc44c1 # master
+          ref: 15752394b49ee5c491257a6bc0e2cfd773971a25 # master
 
       - uses: docker/setup-qemu-action@99012661954931238ded8c8b007157a8430204e1 # v4.4.0
 
