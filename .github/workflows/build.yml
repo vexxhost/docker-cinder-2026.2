@@ -32,7 +32,7 @@ jobs:
       - uses: vexxhost/docker-atmosphere/.github/actions/checkout@c2a2333f668bfbf131bd2a7aa8c387be80f0ea85 # main
         with:
           repository: openstack/requirements
-          ref: 15752394b49ee5c491257a6bc0e2cfd773971a25 # master
+          ref: e2d427fca04304b8785bb110ab820921820317cc # master
 
       - uses: docker/setup-qemu-action@99012661954931238ded8c8b007157a8430204e1 # v4.4.0
 
